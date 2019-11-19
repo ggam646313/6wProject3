@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:id="@+id/menu_keep"
+        android:title="보관"
+        android:icon="@drawable/ic_move_to_inbox_black_32dp"/>
+
+    <item android:id="@+id/menu_active"
+        android:title="내 활동"
+        android:icon="@drawable/ic_access_time_black_32dp"/>
+
+    <item android:id="@+id/menu_save"
+        android:title="저장됨"
+        android:icon="@drawable/ic_bookmark_border_black_32dp"/>
+
+    <item android:id="@+id/menu_friend"
+        android:title="친한 친구"
+        android:icon="@drawable/ic_format_list_black_32dp"/>
+
+    <item android:id="@+id/menu_find_people"
+        android:title="사람 찾아보기"
+        android:icon="@drawable/ic_people_outline_black_32dp"/>
+
+</menu>

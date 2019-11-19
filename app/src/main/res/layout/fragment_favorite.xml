@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="#FFFFFF">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="활동"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="#444444"
+            android:layout_margin="8dp"/>
+
+        <ImageView
+            android:id="@+id/iv"
+            android:layout_width="150dp"
+            android:layout_height="140dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="100dp"
+            android:src="@drawable/ic_favorite_border_black_32dp"/>
+
+        <TextView
+            android:id="@+id/tv_action"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="게시물 활동"
+            android:textSize="32sp"
+            android:textStyle="bold"
+            android:textColor="#444444"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/iv"
+            android:layout_marginTop="30dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="다른 사람이 회원님의 게시물을 좋아하거나 댓글을 남기면 여기에 표시됩니다."
+            android:textSize="16sp"
+            android:textColor="#444444"
+            android:layout_below="@+id/tv_action"
+            android:gravity="center"
+            android:layout_marginTop="32dp"/>
+
+
+
+    </RelativeLayout>
+
+
+</LinearLayout>
