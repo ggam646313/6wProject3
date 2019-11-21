@@ -14,9 +14,7 @@ import com.google.android.material.tabs.TabLayout;
 
 public class MainActivity extends AppCompatActivity {
 
-//    TabLayout tabLayout;
-//    ViewPager pager;
-//    MyAdapter adapter;
+
 
 
     private FragmentManager fragmentManager = getSupportFragmentManager();
@@ -32,6 +30,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
 
 
 

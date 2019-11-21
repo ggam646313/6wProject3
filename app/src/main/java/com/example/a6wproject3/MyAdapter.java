@@ -31,9 +31,6 @@ public class MyAdapter extends FragmentPagerAdapter {
         return fragments.length;
     }
 
-    //뷰페이저와 연동된 탭레이아웃의 탭버튼들의
-    //글씨를 리턴해주는 메소드
-
     @Nullable
     @Override
     public CharSequence getPageTitle(int position) {

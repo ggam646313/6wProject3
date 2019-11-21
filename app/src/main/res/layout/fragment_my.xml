@@ -61,8 +61,8 @@
 
         <Button
             android:id="@+id/btn_profile"
-            android:layout_width="400dp"
-            android:layout_height="wrap_content"
+            android:layout_width="370dp"
+            android:layout_height="25dp"
             android:text="프로필 수정"
             android:textSize="16sp"
             android:layout_centerHorizontal="true"
