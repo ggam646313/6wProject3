@@ -17,6 +17,7 @@ import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 
 import com.bumptech.glide.Glide;
+import com.github.chrisbanes.photoview.PhotoView;
 
 import java.io.InputStream;
 
@@ -24,7 +25,7 @@ import static android.app.Activity.RESULT_OK;
 
 public class FragmentUpload extends Fragment {
 
-    ImageView ivPicture;
+    PhotoView ivPicture;
     Button btnNext;
 
     @Nullable
@@ -35,6 +36,7 @@ public class FragmentUpload extends Fragment {
 
 
         ivPicture= view.findViewById(R.id.iv_picture);
+//        ivPicture.setImageResource(R.drawable.);
         btnNext= view.findViewById(R.id.btn_pictureChoice);
         btnNext.setOnClickListener(new View.OnClickListener() {
             @Override
