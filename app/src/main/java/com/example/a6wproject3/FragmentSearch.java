@@ -14,6 +14,32 @@ public class FragmentSearch extends Fragment {
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        return inflater.inflate(R.layout.fragment_search, container, false);
+        View view= inflater.inflate(R.layout.fragment_search, container, false);
+
+
+        //        tabLayout= findViewById(R.id.layout_tab);
+//        pager= findViewById(R.id.pager);
+//        adapter= new MyAdapter(getSupportFragmentManager());
+//        pager.setAdapter(adapter);
+//        tabLayout.setupWithViewPager(pager);
+//
+//        tabLayout.addOnTabSelectedListener(new TabLayout.OnTabSelectedListener() {
+//            @Override
+//            public void onTabSelected(TabLayout.Tab tab) {
+//
+//            }
+//
+//            @Override
+//            public void onTabUnselected(TabLayout.Tab tab) {
+//
+//            }
+//
+//            @Override
+//            public void onTabReselected(TabLayout.Tab tab) {
+//
+//            }
+//        });
+
+        return view;
     }
 }

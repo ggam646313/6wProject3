@@ -12,32 +12,35 @@
         android:background="#FFFFFF">
 
 
-        <ImageButton
-            android:id="@+id/imgbackbtn"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:src="@drawable/ic_arrow_back_black_32dp"
-            android:background="#FFFFFF"
-            android:layout_margin="8dp"/>
+
 
         <TextView
-            android:id="@+id/tv_gallery"
+            android:id="@+id/tv_Upload"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="갤러리"
+            android:text="업로드"
             android:textSize="24sp"
             android:textColor="#000000"
-            android:layout_toRightOf="@+id/imgbackbtn"
             android:layout_margin="8dp"/>
 
         <Button
+            android:id="@+id/btn_pictureChoice"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="다음"
+            android:text="사진 선택"
             android:textSize="16sp"
             android:background="#00FF0000"
             android:textColor="#5587ED"
             android:layout_alignParentRight="true"/>
+
+        <ImageView
+            android:id="@+id/iv_picture"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="220dp"
+            android:src="@drawable/ic_wallpaper_black_24dp"/>
+
 
 
 
