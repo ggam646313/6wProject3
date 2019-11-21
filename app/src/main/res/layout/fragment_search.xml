@@ -35,7 +35,7 @@
             app:tabTextColor="#000000"
             app:tabSelectedTextColor="#000000"
             app:tabIndicatorColor="#000000"
-            app:tabIndicatorHeight="4dp"
+            app:tabIndicatorHeight="2dp"
             app:tabMode="fixed"
             app:tabGravity="fill">
         </com.google.android.material.tabs.TabLayout>

@@ -33,6 +33,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="게시물"
+            android:textColor="#000000"
             android:textSize="20sp"
             android:layout_toRightOf="@+id/userIcon"
             android:layout_marginTop="50dp"
@@ -43,10 +44,11 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="팔로워"
+            android:textColor="#000000"
             android:textSize="20sp"
             android:layout_toRightOf="@+id/tv_post"
             android:layout_marginTop="50dp"
-            android:layout_marginLeft="30dp"/>
+            android:layout_marginLeft="40dp"/>
 
 
         <TextView
@@ -54,10 +56,11 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="팔로잉"
+            android:textColor="#000000"
             android:textSize="20sp"
             android:layout_toRightOf="@+id/tv_follower"
             android:layout_marginTop="50dp"
-            android:layout_marginLeft="30dp"/>
+            android:layout_marginLeft="40dp"/>
 
         <Button
             android:id="@+id/btn_profile"
@@ -69,44 +72,53 @@
             android:layout_marginTop="140dp"
             android:background="@drawable/back_btn_login"/>
 
-        <View
-            android:id="@+id/view"
+
+
+
+<!--        <ImageButton-->
+<!--            android:id="@+id/ib_apps"-->
+<!--            android:layout_width="48dp"-->
+<!--            android:layout_height="48dp"-->
+<!--            android:layout_below="@+id/view"-->
+<!--            android:layout_marginLeft="100dp"-->
+<!--            android:layout_marginTop="8dp"-->
+<!--            android:src="@drawable/ic_apps_black_24dp"-->
+<!--            android:background="@color/white"/>-->
+
+<!--        <ImageButton-->
+<!--            android:layout_width="48dp"-->
+<!--            android:layout_height="48dp"-->
+<!--            android:layout_below="@+id/view"-->
+<!--            android:layout_marginLeft="120dp"-->
+<!--            android:layout_marginTop="8dp"-->
+<!--            android:src="@drawable/ic_local_offer_black_24dp"-->
+<!--            android:background="@color/white"-->
+<!--            android:layout_toRightOf="@+id/ib_apps"/>-->
+
+
+        <com.google.android.material.tabs.TabLayout
+            android:id="@+id/layout_tab"
             android:layout_width="match_parent"
-            android:layout_height="1dp"
+            android:layout_height="wrap_content"
             android:layout_below="@+id/btn_profile"
-            android:background="#999999"
-            android:layout_marginTop="8dp"/>
+            app:tabTextColor="#000000"
+            app:tabSelectedTextColor="#000000"
+            app:tabIndicatorColor="#000000"
+            app:tabIndicatorHeight="2dp"
+            app:tabMode="fixed"
+            app:tabGravity="fill"
+            android:layout_marginTop="4dp">
+        </com.google.android.material.tabs.TabLayout>
 
 
 
-        <ImageButton
-            android:id="@+id/ib_apps"
-            android:layout_width="48dp"
-            android:layout_height="48dp"
-            android:layout_below="@+id/view"
-            android:layout_marginLeft="100dp"
-            android:layout_marginTop="8dp"
-            android:src="@drawable/ic_apps_black_24dp"
-            android:background="@color/white"/>
 
-        <ImageButton
-            android:layout_width="48dp"
-            android:layout_height="48dp"
-            android:layout_below="@+id/view"
-            android:layout_marginLeft="120dp"
-            android:layout_marginTop="8dp"
-            android:src="@drawable/ic_local_offer_black_24dp"
-            android:background="@color/white"
-            android:layout_toRightOf="@+id/ib_apps"/>
-
-        <View
-            android:id="@+id/view2"
+        <androidx.viewpager.widget.ViewPager
+            android:id="@+id/pager2"
             android:layout_width="match_parent"
-            android:layout_height="1dp"
-            android:layout_below="@+id/ib_apps"
-            android:background="#999999"
-            android:layout_marginTop="8dp"/>
-
+            android:layout_height="match_parent"
+            android:layout_below="@+id/layout_tab">
+        </androidx.viewpager.widget.ViewPager>
 
 
 
