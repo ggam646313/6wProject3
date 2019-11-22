@@ -6,13 +6,19 @@ import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
 import androidx.viewpager.widget.ViewPager;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.provider.MediaStore;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.ImageButton;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.google.android.material.tabs.TabLayout;
 
 public class MainActivity extends AppCompatActivity {
+
+
 
     private BackPressCloseHandler backPressCloseHandler;
 
@@ -33,6 +39,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         backPressCloseHandler = new BackPressCloseHandler(this);
+
 
 
 
@@ -79,5 +86,13 @@ public class MainActivity extends AppCompatActivity {
     @Override
     public void onBackPressed() {
         backPressCloseHandler.onBackPressed();
+    }
+
+    public void clickCamera(View view) {
+
+        Intent intent= new Intent(); //묵시적 인텐트
+        intent.setAction(MediaStore.ACTION_IMAGE_CAPTURE);
+
+        startActivityForResult(intent,100);
     }
 }

@@ -8,12 +8,31 @@ import android.view.ViewGroup;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
+import androidx.recyclerview.widget.RecyclerView;
+
+import java.util.ArrayList;
 
 public class FragmentHome extends Fragment {
+
+    RecyclerView recyclerView;
+    RecyclerAdapter recyclerAdapter;
+
+    ArrayList<RecyclerItem> datas= new ArrayList<RecyclerItem>();
 
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        return inflater.inflate(R.layout.fragment_home, container, false);
+        View view= inflater.inflate(R.layout.fragment_home, container, false);
+
+
+//        datas.add(new RecyclerItem("루피","해적단 선장", R.drawable.graybox,));
+//        datas.add(new RecyclerItem("조로","해적단", R.drawable.ch_zoro, R.drawable.img02));
+
+
+
+
+
+
+        return view;
     }
 }

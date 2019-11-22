@@ -62,8 +62,6 @@ public class FragmentUpload extends Fragment {
             case 10:
 
                 if(resultCode == RESULT_OK){
-
-
                     Uri uri= data.getData();
 
                     if(uri != null){

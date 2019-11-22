@@ -18,7 +18,9 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:src="@drawable/ic_photo_camera_black_24dp"
-            android:background="#FFFFFF"/>
+            android:background="#FFFFFF"
+            android:clickable="true"
+            android:onClick="clickCamera"/>
 
         <TextView
             android:layout_width="wrap_content"

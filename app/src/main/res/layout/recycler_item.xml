@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".MainActivity">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp">
+
+
+
+        <ImageView
+            android:id="@+id/cardView_icon"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:src="@drawable/ic_account_circle_black_24dp"/>
+
+        <TextView
+            android:id="@+id/cardView_username"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Username"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_toRightOf="@id/cardView_icon"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="16dp"/>
+
+
+
+
+
+        <ImageView
+            android:id="@+id/cardView_dots"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="16dp"
+            android:src="@drawable/ic_more_vert_black_24dp"
+            android:clickable="true"/>
+<!--            android:onClick=""-->
+
+        <ImageView
+            android:id="@+id/cardView_image"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/graybox"
+            android:layout_below="@+id/cardView_icon"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:adjustViewBounds="true"
+            android:scaleType="fitXY"
+            android:clickable="true"/>
+<!--            android:onClick=""-->
+
+        <ImageView
+            android:id="@+id/cardView_heart"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/ic_favorite_black_24dp"
+            android:layout_below="@+id/cardView_image"
+            android:clickable="true"/>
+<!--            android:onClick=""-->
+
+        <ImageView
+            android:id="@+id/cardView_comment"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/ic_chat_bubble_outline_black_24dp"
+            android:layout_toRightOf="@+id/cardView_heart"
+            android:layout_marginLeft="16dp"
+            android:layout_below="@+id/cardView_image"
+            android:clickable="true"/>
+<!--            android:onClick=""-->
+
+        <ImageView
+            android:id="@+id/cardView_send"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/ic_send_black_24dp"
+            android:layout_toRightOf="@+id/cardView_comment"
+            android:layout_below="@+id/cardView_image"
+            android:layout_marginLeft="16dp"
+            android:clickable="true"/>
+<!--            android:onClick=""-->
+
+        <TextView
+            android:id="@+id/cardView_like"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="좋아요 ooo개"
+            android:layout_below="@+id/cardView_heart"
+            android:textColor="#000000"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/cardView_username_under"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="userID"
+            android:layout_below="@+id/cardView_like"
+            android:textColor="#000000"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/cardView_usertext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="으아아아아아아"
+            android:layout_toRightOf="@+id/cardView_username_under"
+            android:layout_below="@+id/cardView_like"
+            android:layout_marginLeft="8dp"
+            android:textColor="#000000"/>
+
+        <TextView
+            android:id="@+id/cardView_commentallsee"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="댓글 00개 모두 보기"
+            android:layout_below="@+id/cardView_username_under"
+            android:textSize="10sp"
+            android:layout_marginTop="8dp"/>
+
+
+
+    </RelativeLayout>
+
+
+
+
+</androidx.cardview.widget.CardView>
