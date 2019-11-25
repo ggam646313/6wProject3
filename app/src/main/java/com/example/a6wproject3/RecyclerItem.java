@@ -28,6 +28,7 @@ public class RecyclerItem {
         this.comment = comment;
         this.send = send;
     }
+
 }
 
 

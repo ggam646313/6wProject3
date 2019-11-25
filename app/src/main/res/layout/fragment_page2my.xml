@@ -6,12 +6,23 @@
     android:padding="16dp">
 
     <TextView
+        android:id="@+id/tv_tag"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="태그"
+        android:text="회원님이 나온 사진 및 동영상"
         android:textSize="24sp"
         android:textColor="#000000"
         android:layout_gravity="center"
         android:layout_marginTop="50dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#999999"
+        android:text="사람들이 회원님을 사진 및 동영상에 태그하면 태그된 사진 및 동영상이 여기에 표시됩니다."
+        android:textSize="12dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_marginTop="16dp"/>
 
 </LinearLayout>

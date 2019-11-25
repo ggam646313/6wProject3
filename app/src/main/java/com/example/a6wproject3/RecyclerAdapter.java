@@ -49,6 +49,7 @@ public class RecyclerAdapter extends RecyclerView.Adapter {
         //이미지가 너무크면 OOM(Out of Memory)에러 발생
         //이를 방지하기 위해 Library(Picasso, Glide) 사용
         Glide.with(context).load(recyclerItem.icon).into(vh.ivIcon);
+        Glide.with(context).load(recyclerItem.image).into(vh.ivImage);
     }
 
     @Override
@@ -65,17 +66,17 @@ public class RecyclerAdapter extends RecyclerView.Adapter {
         public VH(@NonNull View itemView) {
             super(itemView);
 
-            ivIcon.findViewById(R.id.cardView_icon);
-            ivDots.findViewById(R.id.cardView_dots);
-            ivImage.findViewById(R.id.cardView_image);
-            ivHeart.findViewById(R.id.cardView_heart);
-            ivComment.findViewById(R.id.cardView_comment);
-            ivSend.findViewById(R.id.cardView_send);
-            tvUsername.findViewById(R.id.cardView_username);
-            tvLike.findViewById(R.id.cardView_like);
-            tvUsername_under.findViewById(R.id.cardView_username_under);
-            tvUsertext.findViewById(R.id.cardView_usertext);
-            tvCommentallsee.findViewById(R.id.cardView_commentallsee);
+            ivIcon= itemView.findViewById(R.id.cardView_icon);
+            ivDots= itemView.findViewById(R.id.cardView_dots);
+            ivImage=itemView.findViewById(R.id.cardView_image);
+            ivHeart=itemView.findViewById(R.id.cardView_heart);
+            ivComment=itemView.findViewById(R.id.cardView_comment);
+            ivSend=itemView.findViewById(R.id.cardView_send);
+            tvUsername=itemView.findViewById(R.id.cardView_username);
+            tvLike=itemView.findViewById(R.id.cardView_like);
+            tvUsername_under=itemView.findViewById(R.id.cardView_username_under);
+            tvUsertext=itemView.findViewById(R.id.cardView_usertext);
+            tvCommentallsee=itemView.findViewById(R.id.cardView_commentallsee);
         }
     }
 }

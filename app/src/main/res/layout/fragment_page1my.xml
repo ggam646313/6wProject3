@@ -6,12 +6,33 @@
     android:padding="16dp">
 
     <TextView
+        android:id="@+id/tv_profile"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="내 게시물"
+        android:text="프로필"
         android:textSize="24sp"
         android:textColor="#000000"
         android:layout_gravity="center"
         android:layout_marginTop="50dp"/>
+
+    <TextView
+        android:id="@+id/tv_profile_show"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="사진과 동영상을 공유하면 프로필에 표시됩니다."
+        android:textSize="12sp"
+        android:textColor="#999999"
+        android:layout_gravity="center"
+        android:layout_marginTop="16dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="첫 사진/동영상을 공유해보세요"
+        android:textSize="12sp"
+        android:layout_gravity="center"
+        android:layout_marginTop="16dp"
+        android:textColor="#489CFF"/>
+
 
 </LinearLayout>
