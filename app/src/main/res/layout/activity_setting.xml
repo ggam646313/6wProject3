@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".SettingActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFFFFF"
+        android:layout_weight="1">
+
+        <ImageButton
+            android:id="@+id/btn_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_close_black_24dp"
+            android:background="#00FF0000"
+            android:padding="8dp"/>
+
+
+        <TextView
+            android:id="@+id/tv_profile_rewrite"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="프로필 수정"
+            android:textSize="20sp"
+            android:textColor="#000000"
+            android:layout_margin="8dp"
+            android:layout_toRightOf="@+id/btn_back"/>
+
+        <ImageButton
+            android:id="@+id/btn_check"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_check_black_24dp"
+            android:background="#00FF0000"
+            android:padding="8dp"
+            android:layout_alignParentRight="true"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_below="@+id/tv_profile_rewrite"
+            android:background="#bbbbbb"/>
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/circle_profile"
+            android:layout_width="96dp"
+            android:layout_height="96dp"
+            android:src="@drawable/ic_account_circle_black_24dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="64dp"/>
+
+        <TextView
+            android:id="@+id/tv_profile_change"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="프로필 사진 변경"
+            android:textSize="16sp"
+            android:layout_below="@+id/circle_profile"
+            android:layout_centerHorizontal="true"
+            android:textColor="#489CFF"/>
+
+        <EditText
+            android:id="@+id/et_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_profile_change"
+            android:background="@drawable/back_btn_login"
+            android:hint="Name"
+            android:maxLines="1"
+            android:inputType="text"
+            android:padding="8dp"
+            android:layout_margin="8dp"/>
+
+        <EditText
+            android:id="@+id/et_username"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/et_name"
+            android:background="@drawable/back_btn_login"
+            android:hint="Username"
+            android:inputType="text"
+            android:maxLines="1"
+            android:padding="8dp"
+            android:layout_margin="8dp"/>
+
+        <EditText
+            android:id="@+id/et_website"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/et_username"
+            android:background="@drawable/back_btn_login"
+            android:hint="Website"
+            android:inputType="text"
+            android:maxLines="1"
+            android:padding="8dp"
+            android:layout_margin="8dp"/>
+
+        <EditText
+            android:id="@+id/et_introduce"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/et_website"
+            android:background="@drawable/back_btn_login"
+            android:hint="소개"
+            android:inputType="text"
+            android:maxLines="1"
+            android:padding="8dp"
+            android:layout_margin="8dp"/>
+
+        <View
+            android:id="@+id/view"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_below="@+id/et_introduce"
+            android:background="#bbbbbb"/>
+
+        <TextView
+            android:id="@+id/tv_profile_infor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="프로필 정보"
+            android:textSize="20sp"
+            android:textColor="#444444"
+            android:layout_below="@+id/view"
+            android:padding="8dp"/>
+
+        <EditText
+            android:id="@+id/et_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_profile_infor"
+            android:background="@drawable/back_btn_login"
+            android:hint="이메일"
+            android:inputType="text"
+            android:maxLines="1"
+            android:padding="8dp"
+            android:layout_margin="8dp"/>
+        <EditText
+            android:id="@+id/et_number"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/et_email"
+            android:background="@drawable/back_btn_login"
+            android:hint="전화번호"
+            android:inputType="text"
+            android:maxLines="1"
+            android:padding="8dp"
+            android:layout_margin="8dp"/>
+
+        <TextView
+            android:id="@+id/tv_gender"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/et_number"
+            android:layout_marginTop="9dp"
+            android:background="#FFFFFF"
+            android:clickable="true"
+            android:padding="8dp"
+            android:text="성별"
+            android:textColor="#444444"
+            android:textSize="20sp"/>
+
+
+    </RelativeLayout>
+
+
+</LinearLayout>

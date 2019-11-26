@@ -26,17 +26,7 @@ public class FragmentHome extends Fragment {
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         View view= inflater.inflate(R.layout.fragment_home, container, false);
 
-//        String username;
-//        String like;
-//        String username_under;
-//        String usertext;
-//        String commentallsee;
-//        int icon;
-//        int dotmenu;
-//        int image;
-//        int heart;
-//        int comment;
-//        int send;
+
 
         datas.add(new RecyclerItem("깜깜","","","아아아으아아","",R.drawable.ch_chopa,0, R.drawable.ch_chopa,0,0,0));
         datas.add(new RecyclerItem("랄랄","","","으에잉","",R.drawable.ch_zoro,0,R.drawable.ch_chopa,0,0,0));

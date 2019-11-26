@@ -25,7 +25,9 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_toRightOf="@+id/search_tab_search"
-            android:hint="검색"/>
+            android:hint="검색"
+            android:maxLines="1"
+            android:inputType="text"/>
 
         <com.google.android.material.tabs.TabLayout
             android:id="@+id/layout_tab"
