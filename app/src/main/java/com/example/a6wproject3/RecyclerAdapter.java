@@ -46,8 +46,7 @@ public class RecyclerAdapter extends RecyclerView.Adapter {
         vh.tvUsername.setText(recyclerItem.username);
         vh.tvUsertext.setText(recyclerItem.usertext);
 
-        //이미지가 너무크면 OOM(Out of Memory)에러 발생
-        //이를 방지하기 위해 Library(Picasso, Glide) 사용
+
         Glide.with(context).load(recyclerItem.icon).into(vh.ivIcon);
         Glide.with(context).load(recyclerItem.image).into(vh.ivImage);
     }

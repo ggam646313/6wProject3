@@ -90,7 +90,7 @@ public class MainActivity extends AppCompatActivity {
 
     public void clickCamera(View view) {
 
-        Intent intent= new Intent(); //묵시적 인텐트
+        Intent intent= new Intent();
         intent.setAction(MediaStore.ACTION_IMAGE_CAPTURE);
 
         startActivityForResult(intent,100);
