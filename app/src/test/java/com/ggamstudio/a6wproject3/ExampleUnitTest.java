@@ -1,4 +1,4 @@
-package com.example.a6wproject3;
+package com.ggamstudio.a6wproject3;
 
 import org.junit.Test;
 

@@ -1,4 +1,4 @@
-package com.example.a6wproject3;
+package com.ggamstudio.a6wproject3;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -9,11 +9,11 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 
-public class FragmentFavorite extends Fragment {
-
+public class Page2FragmentMy extends Fragment {
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        return inflater.inflate(R.layout.fragment_favorite, container, false);
+        View view= inflater.inflate(R.layout.fragment_page2my,container,false);
+        return view;
     }
 }

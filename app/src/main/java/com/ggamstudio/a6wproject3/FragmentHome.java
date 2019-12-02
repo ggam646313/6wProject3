@@ -1,6 +1,5 @@
-package com.example.a6wproject3;
+package com.ggamstudio.a6wproject3;
 
-import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
