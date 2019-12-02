@@ -27,8 +27,8 @@ public class FragmentHome extends Fragment {
 
 
 
-        datas.add(new RecyclerItem("깜깜","","","아아아으아아","",R.drawable.ch_chopa,0, R.drawable.ch_chopa,0,0,0));
-        datas.add(new RecyclerItem("랄랄","","","으에잉","",R.drawable.ch_zoro,0,R.drawable.ch_chopa,0,0,0));
+        datas.add(new RecyclerItem("깜깜","","","아아","",R.drawable.ch_chopa,0, R.drawable.ch_chopa,0,0,0));
+        datas.add(new RecyclerItem("랄랄","","","으에","",R.drawable.ch_zoro,0,R.drawable.ch_chopa,0,0,0));
 
         recyclerView=view.findViewById(R.id.recycler);
         recyclerAdapter= new RecyclerAdapter(datas, getContext());

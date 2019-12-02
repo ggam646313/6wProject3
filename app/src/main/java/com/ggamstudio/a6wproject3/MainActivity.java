@@ -15,11 +15,7 @@ import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 public class MainActivity extends AppCompatActivity {
 
-
-
     private BackPressCloseHandler backPressCloseHandler;
-
-
 
     private FragmentManager fragmentManager = getSupportFragmentManager();
     private FragmentHome fragmentHome= new FragmentHome();
@@ -36,10 +32,6 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         backPressCloseHandler = new BackPressCloseHandler(this);
-
-
-
-
 
 
         FragmentTransaction transaction = fragmentManager.beginTransaction();
