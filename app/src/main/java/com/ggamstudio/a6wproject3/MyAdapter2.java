@@ -9,7 +9,7 @@ import androidx.fragment.app.FragmentPagerAdapter;
 public class MyAdapter2 extends FragmentPagerAdapter {
 
     Fragment[] fragments= new Fragment[2];
-    String[] pageTitles= new String[]{"A", "B"};
+    String[] pageTitles= new String[]{"게시글", "태그"};
 
     public MyAdapter2(@NonNull FragmentManager fm) {
         super(fm);
