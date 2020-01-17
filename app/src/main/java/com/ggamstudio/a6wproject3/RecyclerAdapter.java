@@ -19,6 +19,7 @@ public class RecyclerAdapter extends RecyclerView.Adapter {
     ArrayList<RecyclerItem> datas;
     Context context;
 
+
     public RecyclerAdapter(ArrayList<RecyclerItem> datas, Context context) {
         this.datas = datas;
         this.context = context;
@@ -43,12 +44,18 @@ public class RecyclerAdapter extends RecyclerView.Adapter {
 
         RecyclerItem recyclerItem= datas.get(position);
 
-        vh.tvUsername.setText(recyclerItem.username);
-        vh.tvUsertext.setText(recyclerItem.usertext);
+//        vh.tvUsername.setText(recyclerItem.username);
+//        vh.tvUsertext.setText(recyclerItem.usertext);
+
+        vh.tvUsername.setText(recyclerItem.getUsername());
+        vh.tvUsertext.setText(recyclerItem.getUsertext());
 
 
-        Glide.with(context).load(recyclerItem.icon).into(vh.ivIcon);
-        Glide.with(context).load(recyclerItem.image).into(vh.ivImage);
+//        Glide.with(context).load(recyclerItem.icon).into(vh.ivIcon);
+//        Glide.with(context).load(recyclerItem.image).into(vh.ivImage);
+        Glide.with(context).load(recyclerItem.getIcon()).into(vh.ivIcon);
+        Glide.with(context).load(recyclerItem.getImage()).into(vh.ivImage);
+
     }
 
     @Override
@@ -56,26 +63,30 @@ public class RecyclerAdapter extends RecyclerView.Adapter {
         return datas.size();
     }
 
+
     class VH extends RecyclerView.ViewHolder{
 
         ImageView ivIcon,ivDots,ivImage,ivHeart,ivComment,ivSend;
         TextView tvUsername,tvLike,tvUsername_under,tvUsertext,tvCommentallsee;
 
-
         public VH(@NonNull View itemView) {
             super(itemView);
 
-            ivIcon= itemView.findViewById(R.id.cardView_icon);
-            ivDots= itemView.findViewById(R.id.cardView_dots);
-            ivImage=itemView.findViewById(R.id.cardView_image);
-            ivHeart=itemView.findViewById(R.id.cardView_heart);
-            ivComment=itemView.findViewById(R.id.cardView_comment);
-            ivSend=itemView.findViewById(R.id.cardView_send);
-            tvUsername=itemView.findViewById(R.id.cardView_username);
-            tvLike=itemView.findViewById(R.id.cardView_like);
-            tvUsername_under=itemView.findViewById(R.id.cardView_username_under);
-            tvUsertext=itemView.findViewById(R.id.cardView_usertext);
-            tvCommentallsee=itemView.findViewById(R.id.cardView_commentallsee);
+                ivIcon= itemView.findViewById(R.id.cardView_icon);
+                ivDots= itemView.findViewById(R.id.cardView_dots);
+                ivImage=itemView.findViewById(R.id.cardView_image);
+                ivHeart=itemView.findViewById(R.id.cardView_heart);
+                ivComment=itemView.findViewById(R.id.cardView_comment);
+                ivSend=itemView.findViewById(R.id.cardView_send);
+                tvUsername=itemView.findViewById(R.id.cardView_username);
+                tvLike=itemView.findViewById(R.id.cardView_like);
+                tvUsername_under=itemView.findViewById(R.id.cardView_username_under);
+                tvUsertext=itemView.findViewById(R.id.cardView_usertext);
+                tvCommentallsee=itemView.findViewById(R.id.cardView_commentallsee);
+
+
+
+
         }
     }
 }

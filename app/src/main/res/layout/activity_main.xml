@@ -43,23 +43,21 @@
 
 
     <RelativeLayout
+        android:id="@+id/rLayout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_weight="1"
         android:background="#FFFFFF">
 
-
-        <FrameLayout
-            android:id="@+id/frameLayout"
+        <androidx.viewpager.widget.ViewPager
+            android:id="@+id/p"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="match_parent">
 
-        </FrameLayout>
-
-
-
+        </androidx.viewpager.widget.ViewPager>
 
     </RelativeLayout>
+
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/bnv"

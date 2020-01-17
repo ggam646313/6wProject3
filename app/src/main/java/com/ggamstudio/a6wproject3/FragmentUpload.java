@@ -26,7 +26,6 @@ public class FragmentUpload extends Fragment {
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-
         View view= inflater.inflate(R.layout.fragment_upload, container, false);
 
 
@@ -36,14 +35,11 @@ public class FragmentUpload extends Fragment {
         btnNext.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
                 Intent intent= new Intent(Intent.ACTION_PICK);
                 intent.setType("image/*");
                 startActivityForResult(intent,10);
-
             }
         });
-
 
         return view;
     }
@@ -51,7 +47,6 @@ public class FragmentUpload extends Fragment {
     @Override
     public void onActivityResult(int requestCode, int resultCode, Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
-
 
         switch (requestCode){
             case 10:
@@ -72,5 +67,6 @@ public class FragmentUpload extends Fragment {
                 }
                 break;
         }
-    }
-}
+    }//onActivityResult
+
+}//Fragment
